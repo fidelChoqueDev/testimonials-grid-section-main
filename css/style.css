@@ -1,0 +1,27 @@
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --ligth-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  /* Dos tamaños de font-weight 500 y 600 disponibles */
+}
+
+/* BREAKPOINTS */
+
+/* Según la guia de estilos se definen dos dispositivos
+  mobile: 375px
+  desktop: 1440px
+*/
