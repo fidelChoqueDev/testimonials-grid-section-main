@@ -13,12 +13,56 @@
   box-sizing: border-box;
 }
 
+.card-2 {
+  background-color: var(--dark-grayish-blue);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-3 {
+  background-color: white;
+  color: var(--dark-grayish-blue);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-2 .photo-and-data, .card-3 .photo-and-data {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.card-2 .photo-and-data img, .card-3 .photo-and-data img {
+  border-radius: 50%;
+  width: 35px;
+}
+
+.card-2 .name, .card-3 .name {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-2 .name .graduate, .card-3 .name .graduate {
+  opacity: 50%;
+}
+
+.card-2 .quote, .card-3 .quote {
+  opacity: 70%;
+  padding-top: 15px;
+}
+
+.card-2 .text, .card-3 .text {
+  font-size: 15px;
+}
+
 .attribution{
   font-size: 15px;
   text-align: center;
 }
 
-,.attribution.a{
+.attribution.a{
   color: hsl(228, 45%, 44%);
 }
 
