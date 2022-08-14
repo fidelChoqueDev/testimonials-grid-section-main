@@ -35,6 +35,7 @@ body {
   position: relative;
   background-color: var(--moderate-violet);
   color: var(--white);
+  grid-area: daniel;
   padding: 2rem;
   border-radius: 1rem;
 }
