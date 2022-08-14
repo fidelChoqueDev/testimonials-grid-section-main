@@ -16,6 +16,7 @@
 .card-2 {
   background-color: var(--dark-grayish-blue);
   color: white;
+  grid-area: jonathan;
   padding: 30px;
   border-radius: 10px;
 }
@@ -23,6 +24,7 @@
 .card-3 {
   background-color: white;
   color: var(--dark-grayish-blue);
+  grid-area: jeanette;
   padding: 30px;
   border-radius: 10px;
 }
@@ -70,6 +72,17 @@ body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   /* Dos tamaños de font-weight 500 y 600 disponibles */
+}
+
+@media (min-width: 376px) {
+  .main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "daniel daniel jonathan kira"
+                         "jeanette patrick patrick kira";
+    column-gap: 20px;
+    row-gap: 20px;
+  }
 }
 
 /* BREAKPOINTS */
