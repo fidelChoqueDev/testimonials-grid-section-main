@@ -129,22 +129,6 @@ body {
   font-size: 15px;
 }
 
-<<<<<<< HEAD
-.attribution{
-  font-size: 15px;
-  text-align: center;
-}
-
-.attribution.a{
-  color: hsl(228, 45%, 44%);
-}
-
-body {
-  font-size: 13px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  /* Dos tamaños de font-weight 500 y 600 disponibles */
-}
-
 @media (min-width: 376px) {
   .main {
     display: grid;
@@ -156,8 +140,6 @@ body {
   }
 }
 
-=======
->>>>>>> 384ff79bc669b10a2f95035de238cf187082cc8d
 /* BREAKPOINTS */
 
 /* Según la guia de estilos se definen dos dispositivos
