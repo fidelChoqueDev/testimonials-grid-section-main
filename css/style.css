@@ -134,6 +134,7 @@ body {
 .card-4 {
   background-color: var(--dark-blackish-blue);
   color: white;
+  grid-area: patrick;
   border-radius: 10px;
   padding: 35px;
 }
