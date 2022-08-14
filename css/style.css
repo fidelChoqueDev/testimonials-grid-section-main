@@ -13,6 +13,75 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  /* Dos tamaños de font-weight 500 y 600 disponibles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1440px;
+}
+
+/* CARDS */
+
+/* Card-1 */
+
+.card-1 {
+  position: relative;
+  background-color: var(--moderate-violet);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.card-1__background-quote {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.card-1__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-1__photo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2.5px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.card-1__name {
+  margin: 0.3rem;
+  font-weight: 600;
+}
+
+.card-1__status {
+  margin: 0.3rem;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.card-1__subtitle {
+  position: relative;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.card-1__testimonial {
+  color: hsla(0, 0%, 100%, 0.5);
+  line-height: 1.3rem;
+}
+
+/* cards 2 - 3 */
+
 .card-2 {
   background-color: var(--dark-grayish-blue);
   color: white;
@@ -59,6 +128,7 @@
   font-size: 15px;
 }
 
+<<<<<<< HEAD
 .attribution{
   font-size: 15px;
   text-align: center;
@@ -85,9 +155,13 @@ body {
   }
 }
 
+=======
+>>>>>>> 384ff79bc669b10a2f95035de238cf187082cc8d
 /* BREAKPOINTS */
 
 /* Según la guia de estilos se definen dos dispositivos
   mobile: 375px
   desktop: 1440px
 */
+
+
