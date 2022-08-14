@@ -13,19 +13,18 @@
   box-sizing: border-box;
 }
 
-.attribution{
-  font-size: 15px;
-  text-align: center;
-}
-
-.attribution.a{
-  color: hsl(228, 45%, 44%);
-}
-
 body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   /* Dos tamaños de font-weight 500 y 600 disponibles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1440px;
 }
 
 /* CARDS */
@@ -33,6 +32,7 @@ body {
 /* Card-1 */
 
 .card-1 {
+  position: relative;
   background-color: var(--moderate-violet);
   color: var(--white);
   padding: 2rem;
@@ -132,3 +132,5 @@ body {
   mobile: 375px
   desktop: 1440px
 */
+
+
