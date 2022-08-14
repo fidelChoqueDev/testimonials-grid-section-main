@@ -13,12 +13,44 @@
   box-sizing: border-box;
 }
 
-.attribution{
+.card-4 {
+  background-color: var(--dark-blackish-blue);
+  color: white;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  border: 3px solid hsl(263, 55%, 52%);
+  border-radius: 50%;
+  width: 56px;
+  margin-right: 30px;
+}
+span.condition{
+  opacity:50%;
+  padding-top: 0%;
+}
+span.small-quote{
+  opacity: 70%;
+}
+span.big-quote{
+  font-weight: 600;
+}
+h3.name{
+  padding-bottom: 0%;
+  font-weight: 600;
+}
+.attribution {
   font-size: 15px;
   text-align: center;
 }
 
-,.attribution.a{
+.attribution.a {
   color: hsl(228, 45%, 44%);
 }
 
