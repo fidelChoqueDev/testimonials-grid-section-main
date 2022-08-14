@@ -13,6 +13,121 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  /* Dos tamaños de font-weight 500 y 600 disponibles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1440px;
+}
+
+/* CARDS */
+
+/* Card-1 */
+
+.card-1 {
+  position: relative;
+  background-color: var(--moderate-violet);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.card-1__background-quote {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.card-1__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-1__photo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2.5px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.card-1__name {
+  margin: 0.3rem;
+  font-weight: 600;
+}
+
+.card-1__status {
+  margin: 0.3rem;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.card-1__subtitle {
+  position: relative;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.card-1__testimonial {
+  color: hsla(0, 0%, 100%, 0.5);
+  line-height: 1.3rem;
+}
+
+/* cards 2 - 3 */
+
+.card-2 {
+  background-color: var(--dark-grayish-blue);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-3 {
+  background-color: white;
+  color: var(--dark-grayish-blue);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card-2 .photo-and-data, .card-3 .photo-and-data {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.card-2 .photo-and-data img, .card-3 .photo-and-data img {
+  border-radius: 50%;
+  width: 35px;
+}
+
+.card-2 .name, .card-3 .name {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-2 .name .graduate, .card-3 .name .graduate {
+  opacity: 50%;
+}
+
+.card-2 .quote, .card-3 .quote {
+  opacity: 70%;
+  padding-top: 15px;
+}
+
+.card-2 .text, .card-3 .text {
+  font-size: 15px;
+}
+
+/* Card 4 */
+
 .card-4 {
   background-color: var(--dark-blackish-blue);
   color: white;
@@ -45,24 +160,9 @@ h3.name{
   padding-bottom: 0%;
   font-weight: 600;
 }
-.attribution {
-  font-size: 15px;
-  text-align: center;
-}
-
-.attribution.a {
-  color: hsl(228, 45%, 44%);
-}
-
-body {
-  font-size: 13px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  /* Dos tamaños de font-weight 500 y 600 disponibles */
-}
 
 /* BREAKPOINTS */
 
 /* Según la guia de estilos se definen dos dispositivos
   mobile: 375px
   desktop: 1440px
-*/
