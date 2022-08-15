@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: var(--light-gray);
 }
 
 .main {
@@ -29,10 +30,18 @@ body {
 
 /* CARDS */
 
+article {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Card-1 */
 
 .card-1 {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--moderate-violet);
   color: var(--white);
   grid-area: daniel;
@@ -47,6 +56,7 @@ body {
 }
 
 .card-1__header {
+  position: relative;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -99,33 +109,39 @@ body {
   border-radius: 10px;
 }
 
-.card-2 .photo-and-data, .card-3 .photo-and-data {
+.card-2 .photo-and-data,
+.card-3 .photo-and-data {
   display: flex;
   align-items: center;
   padding-bottom: 15px;
 }
 
-.card-2 .photo-and-data img, .card-3 .photo-and-data img {
+.card-2 .photo-and-data img,
+.card-3 .photo-and-data img {
   border-radius: 50%;
   width: 35px;
 }
 
-.card-2 .name, .card-3 .name {
+.card-2 .name,
+.card-3 .name {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.card-2 .name .graduate, .card-3 .name .graduate {
+.card-2 .name .graduate,
+.card-3 .name .graduate {
   opacity: 50%;
 }
 
-.card-2 .quote, .card-3 .quote {
+.card-2 .quote,
+.card-3 .quote {
   opacity: 70%;
   padding-top: 15px;
 }
 
-.card-2 .text, .card-3 .text {
+.card-2 .text,
+.card-3 .text {
   font-size: 15px;
 }
 
@@ -139,7 +155,7 @@ body {
   padding: 35px;
 }
 
-.header{
+.header {
   display: flex;
   flex-direction: row;
 }
@@ -150,25 +166,24 @@ body {
   width: 56px;
   margin-right: 30px;
 }
-span.condition{
-  opacity:50%;
+span.condition {
+  opacity: 50%;
   padding-top: 0%;
 }
-span.small-quote{
+span.small-quote {
   opacity: 70%;
 }
-span.big-quote{
+span.big-quote {
   font-weight: 600;
 }
-h3.name{
+h3.name {
   padding-bottom: 0%;
   font-weight: 600;
 }
 
-
 /* Card 5 */
 
-.card-5{
+.card-5 {
   background-color: var(--ligth-grayish-blue);
   color: black;
   padding: 30px;
@@ -177,39 +192,39 @@ h3.name{
   display: flexbox;
 }
 
-.foto_nom{
-  display:inline-flex;
+.foto_nom {
+  display: inline-flex;
   padding-top: 10px;
 }
 
-.foto_nom img{
+.foto_nom img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
 
-.nombre{
- padding-left: 20px;
- padding-top: 0.7rem;
- line-height: 0.3rem;
- display:flex;
- flex-direction: column;
+.nombre {
+  padding-left: 20px;
+  padding-top: 0.7rem;
+  line-height: 0.3rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.nombre span{
-font-size: 17px;
+.nombre span {
+  font-size: 17px;
 }
-.nombre p{
+.nombre p {
   opacity: 70%;
 }
 
-.subtitulo{
+.subtitulo {
   font-size: 1.3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.descripcion{
+.descripcion {
   line-height: 1.5rem;
 }
 
@@ -217,15 +232,10 @@ font-size: 17px;
   .main {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: "daniel daniel jonathan kira"
-                         "jeanette patrick patrick kira";
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
     column-gap: 20px;
     row-gap: 20px;
   }
 }
-
-/* BREAKPOINTS */
-
-/* Según la guia de estilos se definen dos dispositivos
-  mobile: 375px
-  desktop: 1440px
