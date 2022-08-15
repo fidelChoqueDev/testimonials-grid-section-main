@@ -165,6 +165,54 @@ h3.name{
   font-weight: 600;
 }
 
+
+/* Card 5 */
+
+.card-5{
+  background-color: var(--ligth-grayish-blue);
+  color: black;
+  padding: 30px;
+  border-radius: 15px;
+  grid-area: kira;
+  display: flexbox;
+}
+
+.foto_nom{
+  display:inline-flex;
+  padding-top: 10px;
+}
+
+.foto_nom img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.nombre{
+ padding-left: 20px;
+ padding-top: 0.7rem;
+ line-height: 0.3rem;
+ display:flex;
+ flex-direction: column;
+}
+
+.nombre span{
+font-size: 17px;
+}
+.nombre p{
+  opacity: 70%;
+}
+
+.subtitulo{
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.descripcion{
+  line-height: 1.5rem;
+}
+
 @media (min-width: 376px) {
   .main {
     display: grid;
